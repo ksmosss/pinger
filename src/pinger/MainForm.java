@@ -45,52 +45,52 @@ public class MainForm {
     public void pingers() {
         if (RadioButton1.isSelected()){
             long t = System.currentTimeMillis();
-            if (ping("91.244.253.114")) {
+            if (ping("8.8.8.8")) { //Здесь указывается ip-адрес компании
                 long CurrentTime = System.currentTimeMillis() - t;
-                label.setText(label.getText() + "КПАТП Сервер доступен " + CurrentTime + "мс\n");
+                label.setText(label.getText() + "Google Сервер доступен " + CurrentTime + "мс\n"); //Здесь указывается название компании
             }
             else
-                label.setText(label.getText() +"КПАТП Сервер не доступен \n");
+                label.setText(label.getText() +"Google Сервер не доступен \n"); //Здесь указывается название компании
         }
         else{}
         if (RadioButton2.isSelected()){
             long t = System.currentTimeMillis();
-            if (ping("91.225.78.216")) {
+            if (ping("77.88.55.80")) { //Здесь указывается ip-адрес компании
                 long CurrentTime = System.currentTimeMillis() - t;
-                label.setText(label.getText() + "Маяк Сервер доступен " + CurrentTime + "мс\n");
+                label.setText(label.getText() + "Яндекс Сервер доступен " + CurrentTime + "мс\n"); //Здесь указывается название компании
             }
             else
-                label.setText(label.getText() +"Маяк Сервер не доступен \n");
+                label.setText(label.getText() + "Яндекс Сервер не доступен \n"); //Здесь указывается название компании
         }
         else{}
         if (RadioButton3.isSelected()){
             long t = System.currentTimeMillis();
-            if (ping("2.56.180.92")) {
+            if (ping("17.253.144.10")) { //Здесь указывается ip-адрес компании
                 long CurrentTime = System.currentTimeMillis() - t;
-                label.setText(label.getText() + "ПСК Сервер доступен " + CurrentTime + "мс\n");
+                label.setText(label.getText() + "Apple Сервер доступен " + CurrentTime + "мс\n"); //Здесь указывается название компании
             }
             else
-                label.setText(label.getText() +"ПСК Сервер не доступен \n");
+                label.setText(label.getText() +"Apple Сервер не доступен \n"); //Здесь указывается название компании
         }
         else{}
         if (RadioButton4.isSelected()){
             long t = System.currentTimeMillis();
-            if (ping("2.56.182.128")) {
+            if (ping("87.240.137.158")) { //Здесь указывается ip-адрес компании
                 long CurrentTime = System.currentTimeMillis() - t;
-                label.setText(label.getText() + "ФерриВатт Сервер доступен " + CurrentTime + "мс\n");
+                label.setText(label.getText() + "ВК Сервер доступен " + CurrentTime + "мс\n"); //Здесь указывается название компании
             }
             else
-                label.setText(label.getText() +"ФерриВатт Сервер не доступен \n");
+                label.setText(label.getText() +"ВК Сервер не доступен \n"); //Здесь указывается название компании
         }
         else{}
         if (RadioButton5.isSelected()){
             long t = System.currentTimeMillis();
-            if (ping("91.225.76.213")) {
+            if (ping("5.61.23.11")) { //Здесь указывается ip-адрес компании
                 long CurrentTime = System.currentTimeMillis() - t;
-                label.setText(label.getText() + "Постмастер Сервер доступен " + CurrentTime + "мс\n");
+                label.setText(label.getText() + "ОК Сервер доступен " + CurrentTime + "мс\n"); //Здесь указывается название компании
             }
             else
-                label.setText(label.getText() +"Постмастер Сервер не доступен \n");
+                label.setText(label.getText() +"ОК Сервер не доступен \n"); //Здесь указывается название компании
         }
         else{}
     }

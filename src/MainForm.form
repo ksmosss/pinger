@@ -46,7 +46,8 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="КПАТП"/>
+              <selected value="false"/>
+              <text value="Google"/>
             </properties>
           </component>
           <component id="fafbf" class="javax.swing.JRadioButton" binding="RadioButton3">
@@ -55,7 +56,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="ПСК"/>
+              <text value="Apple"/>
             </properties>
           </component>
           <component id="3f47e" class="javax.swing.JRadioButton" binding="RadioButton4">
@@ -64,7 +65,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="ФерриВатт"/>
+              <text value="ВК"/>
             </properties>
           </component>
           <component id="35703" class="javax.swing.JRadioButton" binding="RadioButton5">
@@ -73,7 +74,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="Постмастер"/>
+              <text value="ОК"/>
             </properties>
           </component>
           <component id="aefe0" class="javax.swing.JRadioButton" binding="RadioButton2">
@@ -82,7 +83,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="Маяк"/>
+              <text value="Яндекс"/>
             </properties>
           </component>
           <component id="711bc" class="javax.swing.JTextArea" binding="label">
