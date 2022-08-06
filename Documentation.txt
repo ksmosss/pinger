@@ -1,0 +1,2 @@
+1) In the folder we find the file jdk-18.0.2_windows-x64_bin.exe and install it
+2) Launch Pinger.exe
