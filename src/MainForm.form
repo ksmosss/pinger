@@ -7,9 +7,11 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="c3f48" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+      <grid id="c3f48" layout-manager="FlowLayout" hgap="50" vgap="5" flow-align="2">
         <constraints border-constraint="North"/>
-        <properties/>
+        <properties>
+          <preferredSize width="343" height="40"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="9766f" class="javax.swing.JLabel" binding="name">
@@ -18,23 +20,42 @@
               <text value="Даниил Ганичев"/>
             </properties>
           </component>
+          <component id="627f5" class="javax.swing.JButton" binding="button4">
+            <constraints/>
+            <properties>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <maximumSize width="50" height="30"/>
+              <selected value="false"/>
+              <text value="Обновления"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="a6a2" binding="JPanel1" layout-manager="GridBagLayout">
         <constraints border-constraint="Center"/>
-        <properties>
-          <autoscrolls value="false"/>
-          <inheritsPopupMenu value="false"/>
-        </properties>
+        <properties/>
         <border type="none"/>
         <children>
+          <component id="299ef" class="javax.swing.JRadioButton" binding="RadioButton1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="КПАТП"/>
+            </properties>
+          </component>
           <component id="fafbf" class="javax.swing.JRadioButton" binding="RadioButton3">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="Apple"/>
+              <text value="ПСК"/>
             </properties>
           </component>
           <component id="3f47e" class="javax.swing.JRadioButton" binding="RadioButton4">
@@ -43,7 +64,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="ВК"/>
+              <text value="ФерриВатт"/>
             </properties>
           </component>
           <component id="35703" class="javax.swing.JRadioButton" binding="RadioButton5">
@@ -52,7 +73,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="ОК"/>
+              <text value="Постмастер"/>
             </properties>
           </component>
           <component id="aefe0" class="javax.swing.JRadioButton" binding="RadioButton2">
@@ -61,7 +82,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="Яндекс"/>
+              <text value="Маяк"/>
             </properties>
           </component>
           <component id="711bc" class="javax.swing.JTextArea" binding="label">
@@ -73,16 +94,6 @@
             </constraints>
             <properties>
               <editable value="false"/>
-              <enabled value="true"/>
-            </properties>
-          </component>
-          <component id="299ef" class="javax.swing.JRadioButton" binding="RadioButton1">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="Google"/>
             </properties>
           </component>
         </children>
@@ -92,30 +103,6 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="cb769" class="javax.swing.JCheckBox" binding="autopingCheckBox">
-            <constraints/>
-            <properties>
-              <autoscrolls value="false"/>
-              <doubleBuffered value="false"/>
-              <enabled value="true"/>
-              <focusPainted value="true"/>
-              <focusable value="true"/>
-              <horizontalAlignment value="2"/>
-              <horizontalTextPosition value="4"/>
-              <inheritsPopupMenu value="false"/>
-              <opaque value="true"/>
-              <requestFocusEnabled value="true"/>
-              <rolloverEnabled value="true"/>
-              <selected value="false"/>
-              <text value="Autoping(не работает)"/>
-              <verticalAlignment value="0"/>
-              <verticalTextPosition value="0"/>
-            </properties>
-            <clientProperties>
-              <hideActionText class="java.lang.Boolean" value="false"/>
-              <html.disable class="java.lang.Boolean" value="false"/>
-            </clientProperties>
-          </component>
           <component id="9de59" class="javax.swing.JButton" binding="button">
             <constraints/>
             <properties>
@@ -128,10 +115,16 @@
               <text value="Сбросить"/>
             </properties>
           </component>
-          <component id="9f346" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <component id="ea8e2" class="javax.swing.JButton" binding="button3">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Записать логи в файл"/>
+            </properties>
+          </component>
+          <component id="48c8b" class="javax.swing.JButton" binding="button5">
+            <constraints/>
+            <properties>
+              <text value="Создать"/>
             </properties>
           </component>
         </children>
