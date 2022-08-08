@@ -20,8 +20,14 @@ public class Inputfile extends MainForm {
 
         String buffer = formatForDateNow.format(currentDate) + text + texts;
         try {
-            byte[] bs = buffer.getBytes();
-            Files.write(Paths.get(filePath.toURI()), bs, StandardOpenOption.APPEND);
+            if (filePath.createNewFile() == true){
+                byte[] bs = buffer.getBytes();
+                Files.write(Paths.get(filePath.toURI()), bs);
+            }
+            else {
+                byte[] bs = buffer.getBytes();
+                Files.write(Paths.get(filePath.toURI()), bs, StandardOpenOption.APPEND);
+            }
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }

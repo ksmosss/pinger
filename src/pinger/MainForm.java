@@ -95,6 +95,43 @@ public class MainForm {
         else{}
     }
 
+    public void newPopup() {
+        this.nameup = nameup;
+        JFrame jFrame = new JFrame("Создание нового объекта");
+        JDialog jd = new JDialog(jFrame);
+        jd.setVisible(true);
+        jd.setLayout(new FlowLayout());
+        jd.setBounds(500, 300, 400, 300);
+        JLabel jLabel = new JLabel("Введите параметры кнопки:");
+        jLabel.setPreferredSize(new Dimension(250, 20));
+        JLabel jLabelip = new JLabel("Ip-адрес");
+        jLabelip.setPreferredSize(new Dimension(300, 30));
+        JTextArea JtextArea = new JTextArea(" ");
+        JtextArea.setPreferredSize(new Dimension(300, 20));
+        JLabel jLabelname = new JLabel("Имя объекта");
+        jLabelname.setPreferredSize(new Dimension(300, 30));
+        JTextArea JtextAreaname = new JTextArea(" ");
+        JtextAreaname.setPreferredSize(new Dimension(300, 20));
+        JButton jButton = new JButton("Сохранить");
+        jd.add(jLabel);
+        jd.add(jLabelip);
+        jd.add(JtextArea);
+        jd.add(jLabelname);
+        jd.add(JtextAreaname);
+        jd.add(jButton);
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jd.setVisible(false);
+                JRadioButton but = new JRadioButton();
+                nameup = JtextAreaname.getText();
+                but.setText(nameup);
+                JPanel1.add(but);
+                JPanel1.revalidate();
+            }
+        });
+    }
+
     public MainForm(){
         button.addActionListener(new Action() {
             @Override
@@ -284,42 +321,6 @@ public class MainForm {
     }
 
 
-    public void newPopup() {
-        this.nameup = nameup;
-        JFrame jFrame = new JFrame("Создание нового объекта");
-        JDialog jd = new JDialog(jFrame);
-        jd.setVisible(true);
-        jd.setLayout(new FlowLayout());
-        jd.setBounds(500, 300, 400, 300);
-        JLabel jLabel = new JLabel("Введите параметры кнопки:");
-        jLabel.setPreferredSize(new Dimension(250,20));
-        JLabel jLabelip = new JLabel("Ip-адрес");
-        jLabelip.setPreferredSize(new Dimension(300,30));
-        JTextArea JtextArea = new JTextArea(" ");
-        JtextArea.setPreferredSize(new Dimension(300,20));
-        JLabel jLabelname = new JLabel("Имя объекта");
-        jLabelname.setPreferredSize(new Dimension(300,30));
-        JTextArea JtextAreaname = new JTextArea(" ");
-        JtextAreaname.setPreferredSize(new Dimension(300,20));
-        JButton jButton = new JButton("Сохранить");
-        jd.add(jLabel);
-        jd.add(jLabelip);
-        jd.add(JtextArea);
-        jd.add(jLabelname);
-        jd.add(JtextAreaname);
-        jd.add(jButton);
-        jButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jd.setVisible(false);
-                JRadioButton but = new JRadioButton();
-                nameup = JtextAreaname.getText();
-                but.setText(nameup);
-                JPanel1.add(but);
-                JPanel1.revalidate();
-            }
-        });
-    }
 
 
 
